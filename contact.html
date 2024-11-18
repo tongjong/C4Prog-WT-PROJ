@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link href="assets/css/output.css" rel="stylesheet">
+</head>
+<body class="relative bg-ebony">
+    <header class="header">
+        <h1 class="hidden md:block header-title">Tong Jong</h1>
+        <img class="header-image md:hidden" src="./assets/img/hamburger-menu.png" alt="hamburger menu icon">
+        <nav class="hidden md:block header-nav">
+            <ul class="header-nav-items">
+                <li><a class="hover:text-tigerOrange" href="index.html">Home</a></li>
+                <li><a class="hover:text-tigerOrange" href="#">Contact</a></li>
+                <li><a class="hover:text-tigerOrange" href="about.html">About</a></li>
+                <li><a class="hover:text-tigerOrange" href="resume.html">Resume</a></li>
+                <li><a class="hover:text-tigerOrange" href="projects.html">Project</a></li>
+                <li><a class="hover:text-tigerOrange" href="myWork.html">Sample Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="pt-28 pb-20 text-tigerOrange text-2xl flex flex-col items-center">
+        <h1 class="text-5xl font-bold md:text-6xl">Connect with me</h1>
+        <p class="text-xl">Looking forward to hearing from you</p>
+        <form class="mt-10 flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 md:gap-x-4 md:p-3 md:mt-0">
+            <div class="flex flex-col space-y-3 mb-5 md:mb-1">
+                <label for="full-name">Full Name:</label>
+                <input class="p-2 rounded-full" id="full-name" type="text">
+            </div>
+            <div class="flex flex-col space-y-3 mb-5 md:mb-1">
+                <label for="phone">Phone:</label>
+                <input class="p-2 rounded-full" id="phone" type="tel">
+            </div>
+            <div class="flex flex-col space-y-3 mb-5 md:mb-1">
+                <label for="email">Email:</label>
+                <input class="p-2 rounded-full" id="email" type="email">
+            </div>
+            <div class="flex flex-col space-y-3 mb-5 w-full md:col-start-1 md:col-span-2 md:mb-10">
+                <label for="message">Message:</label>
+                <textarea class="p-2 w-full h-32 resize-y rounded-lg" id="message" type="text"></textarea>
+            </div>
+            <button class="bg-copper text-black font-bold py-3 px-6 w-1/2 rounded-lg md:row-start-3 md:col-start-2 md:justify-self-center" type="submit">Submit</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p><a class="hover:text-tigerOrange" href="">&copy;</a> Copyright 2024 Adrian Gould & Tong Jong</p>
+    </footer>
+</body>
+</html>
