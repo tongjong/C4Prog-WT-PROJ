@@ -5,11 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    <link href="./assets/css/output.css" rel="stylesheet">
+    <link href="assets/css/output.css" rel="stylesheet">
 </head>
-<body>
-<main>
-    <h1 class="underline">Welcome to My Website</h1>
-</main>
+<body class="relative bg-ebony">
+    <header class="header">
+        <h1 class="hidden md:block header-title">Tong Jong</h1>
+        <img class="header-image md:hidden" src="./assets/img/hamburger-menu.png" alt="hamburger menu icon">
+        <nav class="hidden md:block header-nav">
+            <ul class="header-nav-items">
+                <li><a class="hover:text-tigerOrange" href="#">Home</a></li>
+                <li><a class="hover:text-tigerOrange" href="contact.html">Contact</a></li>
+                <li><a class="hover:text-tigerOrange" href="about.html">About</a></li>
+                <li><a class="hover:text-tigerOrange" href="resume.html">Resume</a></li>
+                <li><a class="hover:text-tigerOrange" href="projects.html">Project</a></li>
+                <li><a class="hover:text-tigerOrange" href="myWork.html">Sample Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="text-tigerOrange flex flex-col items-center space-y-20 mt-32 mx-12 md:grid md:grid-cols-4 md:gap-12 md:mx-12 md:mt-24 relative">
+        <div class="flex flex-col space-y-3 md:col-start-3 md:col-span-2">
+            <h1 class="font-bold text-5xl">Welcome</h1>
+            <div class="flex space-x-3 items-center">
+                <p>I’m a passionate programming student eager to share my journey.
+                    Dive into my projects, explore my skills, and browse my resume!</p>
+                <img class="w-36 h-36 rounded-full md:rounded-none md:absolute md:-left-5 md:-top-2 md:h-full md:w-1/2" src="./assets/img/home.jpg" alt="profile image">
+            </div>
+        </div>
+        <button class="bg-copper text-black text-lg font-bold px-8 py-11 rounded-full md:col-start-3 md:w-32 md:py-12">
+            <a class="hover:text-tigerOrange" href="/projects.html">Project</a>
+        </button>
+        <button class="bg-copper text-black text-lg font-bold px-8 py-12 rounded-full md:col-start-4 md:w-32">
+            <a class="hover:text-tigerOrange" href="/contact.html">Contact</a>
+        </button>
+    </main>
+    <footer class="footer">
+        <p><a class="hover:text-tigerOrange" href="">&copy;</a> Copyright 2024 Adrian Gould & Tong Jong</p>
+    </footer>
 </body>
 </html>

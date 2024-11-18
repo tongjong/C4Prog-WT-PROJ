@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+    @apply flex flex-col items-center bg-coyoteBrown fixed w-full left-0 top-0 z-10 md:items-end md:flex-row md:justify-around md:pt-3
+}
+
+.header-title {
+    @apply text-3xl text-ebony font-bold  md:h-12 md:items-start
+}
+
+.header-image {
+    @apply h-12 w-12 m-3 object-contain
+}
+
+.header-nav {
+    @apply bg-ebony h-screen w-screen md:h-12 md:bg-coyoteBrown md:w-1/2
+}
+
+.header-nav-items {
+    @apply h-3/4 flex flex-col justify-around items-center text-3xl text-copper font-bold
+    md:flex-row md:text-sm md:text-ebony
+}
+
+.footer {
+    @apply fixed bottom-0 left-0 w-full bg-coyoteBrown py-3 flex justify-center
+}
