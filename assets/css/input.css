@@ -26,3 +26,11 @@
 .footer {
     @apply fixed bottom-0 left-0 w-full bg-coyoteBrown py-3 flex justify-center
 }
+
+.btn {
+    @apply bg-copper text-black font-bold py-3 px-6 w-1/2 rounded-lg
+}
+
+.main-h1{
+    @apply text-5xl font-bold md:text-6xl
+}
