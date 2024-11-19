@@ -25,28 +25,29 @@
     <main class="pt-28 pb-20 text-tigerOrange text-2xl flex flex-col items-center">
         <h1 class="text-5xl font-bold md:text-6xl">Connect with me</h1>
         <p class="text-xl">Looking forward to hearing from you</p>
-        <form class="mt-10 flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 md:gap-x-4 md:p-3 md:mt-0">
+        <form name="contact-form" class="mt-10 flex flex-col items-center md:grid md:grid-cols-3 md:grid-rows-2 md:gap-x-4 md:p-3 md:mt-0">
             <div class="flex flex-col space-y-3 mb-5 md:mb-1">
                 <label for="full-name">Full Name:</label>
-                <input class="p-2 rounded-full" id="full-name" type="text">
+                <input class="p-2 rounded-full text-black" id="full-name" name="full-name" type="text" required>
             </div>
             <div class="flex flex-col space-y-3 mb-5 md:mb-1">
                 <label for="phone">Phone:</label>
-                <input class="p-2 rounded-full" id="phone" type="tel">
+                <input class="p-2 rounded-full text-black" id="phone" name="phone" type="tel" required>
             </div>
             <div class="flex flex-col space-y-3 mb-5 md:mb-1">
                 <label for="email">Email:</label>
-                <input class="p-2 rounded-full" id="email" type="email">
+                <input class="p-2 rounded-full text-black" id="email" name="email" type="email" required>
             </div>
             <div class="flex flex-col space-y-3 mb-5 w-full md:col-start-1 md:col-span-2 md:mb-10">
                 <label for="message">Message:</label>
-                <textarea class="p-2 w-full h-32 resize-y rounded-lg" id="message" type="text"></textarea>
+                <textarea class="p-2 w-full h-32 resize-y rounded-lg text-black" name="message" id="message" type="text" required></textarea>
             </div>
-            <button class="bg-copper text-black font-bold py-3 px-6 w-1/2 rounded-lg md:row-start-3 md:col-start-2 md:justify-self-center" type="submit">Submit</button>
+            <button class="bg-copper text-black font-bold py-3 px-6 w-1/2 rounded-lg md:row-start-3 md:col-start-2 md:justify-self-center" type="submit" id="contact-button" disabled>Submit</button>
         </form>
     </main>
     <footer class="footer">
         <p><a class="hover:text-tigerOrange" href="copyright.html">&copy;</a> Copyright 2024 Adrian Gould & Tong Jong</p>
     </footer>
+    <script src="./assets/js/projects.js"></script>
 </body>
 </html>
