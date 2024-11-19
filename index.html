@@ -22,19 +22,21 @@
             </ul>
         </nav>
     </header>
-    <main class="text-tigerOrange flex flex-col items-center space-y-20 mt-32 mx-12 md:grid md:grid-cols-4 md:gap-12 md:mx-12 md:mt-24 relative">
-        <div class="flex flex-col space-y-3 md:col-start-3 md:col-span-2">
-            <h1 class="font-bold text-5xl">Welcome</h1>
-            <div class="flex space-x-3 items-center">
-                <p>I’m a passionate programming student eager to share my journey.
-                    Dive into my projects, explore my skills, and browse my resume!</p>
-                <img class="w-36 h-36 rounded-full md:rounded-none md:absolute md:-left-5 md:-top-2 md:h-full md:w-1/2" src="./assets/img/home.jpg" alt="profile image">
-            </div>
-        </div>
-        <button class="bg-copper text-black text-lg font-bold px-8 py-11 rounded-full md:col-start-3 md:w-32 md:py-12">
+    <main class="pt-32 pb-20 px-5 text-tigerOrange text-lg grid grid-cols-2 grid-rows-3 gap-x-6 md:grid-cols-4 md:pt-0 md:pb-0 md:px-0">
+        <img class="w-36 h-36 rounded-full col-start-2 row-start-1 self-center justify-self-center
+         md:rounded-none md:col-start-1 md:col-span-2 md:row-start-1 md:row-span-3 md:w-screen md:h-screen md:self-center" src="./assets/img/home.jpg"
+             alt="a self portrait of an animated girl">
+        <section class="col-start-1 row-start-1 md:col-start-3 md:col-span-2 md:row-start-1 md:row-span-2 md:self-center">
+            <h1 class="main-h1 mb-4">Welcome</h1>
+            <p class="md:mb-4">I’m a passionate programming student eager to share my journey.
+                Dive into my projects, explore my skills, and browse my resume!</p>
+        </section>
+        <button class="w-36 h-36 bg-copper text-black text-lg font-bold rounded-full col-start-1 col-span-2 row-start-2
+        justify-self-center self-center md:col-start-3 md:col-start-3 md:col-span-1 md:row-start-3 md:self-start ">
             <a class="hover:text-tigerOrange" href="projects.html">Project</a>
         </button>
-        <button class="bg-copper text-black text-lg font-bold px-8 py-12 rounded-full md:col-start-4 md:w-32">
+        <button class="w-36 h-36 bg-copper text-black text-lg font-bold rounded-full col-start-1 col-span-2 row-start-3
+        justify-self-center self-center md:col-start-4 md:col-span-1 md:row-start-3 md:self-start">
             <a class="hover:text-tigerOrange" href="contact.html">Contact</a>
         </button>
     </main>
